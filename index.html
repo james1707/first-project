@@ -4,43 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="nav">
-        <div id="logo">
-    <img src="https://acciojob.com/_next/static/media/full_logo.1a83ae71.svg?imwidth=256" alt="acciojob" height="60px">
-</div>
-    <a href="#">Home</a>
-    <a href="#">Modules</a>
-    <a href="#">Doubt</a>
-    <a href="#">About</a>
-    <button id="dash">Dashboard</button>
-</div>
-
-<div id="banner">
-<h2>Next batch starts on ⌛️ 5th September. Hurry, limited seats left!</h2>
-</div>
-
-    <div class="hero">
-        <h1 id="hero-head">Full Stack Development | Data Structures & Algorithms | Data Analytics</h1>
-    <button id="btn">Start Exploring</button>
+        <div class="link1">
+       <a class="header" href="#bk">BOOKS</a>
+    </div>
+     <div class="link1">
+       <a class="header" href="#reg">REGISTER</a>
+    </div>
     </div>
 
-    <div class="form">
-        <h2>Start your Web Development Journey Now!</h2>
-        <form method="post">
-          <div class="info">
-           <p>Name:<input type="text" name="full_name" placeholder="Enter Name"></p>
-          </div>
-          <div class="info">
-            <p>Email:<input type="text" name="Email" placeholder="Enter Email"></p>
-          </div>
-          <div class="info">
-            <p>Age:<input type="number" name="Age" placeholder="Enter Age"></p>
-          </div>
+    <div id="books">
+     <h2 id="bk">BOOKS</h2>
+    </div>
+    <div class="container1">
+        <table border="1px"  id="tb">
+            <thead>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+            <tr>
+            </thead>
+            <tbody>
+                <td>1</td>
+                <td>
+                    <a class="names" href="https://www.amazon.in/Everyday-Hero-Manifesto-Robin-Sharma/dp/9391019749/ref=sr_1_1_sspa?crid=2RMETYWPZ7FC0&keywords=books&qid=1692445345&sprefix=boo%2Caps%2C278&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">The Everyday Hero Manifesto</a> 
+                      <table border=1px>
+                    <tr>
+                    <td>Page count</td>
+                    <td>250</td> 
+                    </tr>
+                    <tr>
+                    <td> Book id-</td> 
+                    <td>123456</td>
+                </tr>
+                    </tr>
+                </table>
+                </td>
+                <td> Robin Sharma</td>
+                <td>Self help</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a class="names" href="https://www.amazon.in/Everyday-Hero-Manifesto-Robin-Sharma/dp/9391019749/ref=sr_1_1_sspa?crid=2RMETYWPZ7FC0&keywords=books&qid=1692445345&sprefix=boo%2Caps%2C278&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Do It Today</a> 
+                      <table border=1px>
+                    <tr>
+                    <td>Page count</td>
+                    <td>200</td> 
+                    </tr>
+                    <tr>
+                    <td> Book id-</td> 
+                    <td>2345567</td>
+                </tr>
+                    </tr>
+                </table>
+                </td>
+                <td>Darius Foroux</td>
+                <td>Self help</td>
+                <td>Available</td>
+            </tr>
+            <tr>
 
-          <button id="fbtn">Submit</button>
+        </tbody>
+        </table>
+         
+        <div class="register">
+
+            <h2 id="reg">REGISTER</h2>
+
+        <form method="post">
+            <p>First Name:</p>
+            <div class="info">
+            <input type="text" name="first_name" placeholder="Enter First Name">
+            </div>
+
+            <p>Last Name:</p> 
+            <div class="info">
+                <input type="text" name="Last name" placeholder="Enter Last Name">
+            </div>
+
+            <p>Date Of Birth:</p>
+            <div class="info">
+            <input type="date" name="date">
+            </div>
+
+            <p>Age:</p>
+            <div class="info">
+            <input type="number" name="age" placeholder="Age">
+        </div>
+
+            <p>Email:</p>
+            <div class="info">
+                <input type="text" name="Email" placeholder="Enter Email">
+            </div>
+
+            <p>Password: </p>
+            <div class="info">
+                <input type="text" name="password" placeholder="Enter Password">
+            </div>
+
+            <p>Confirm Password:</p>
+            <div class="info">
+                <input type="password" name="password_confirm" placeholder="Confirm password">
+                </div>
+                 <div>
+                <button id="rbtn">Register</button>
+            </div>
         </form>
     </div>
 </body>
